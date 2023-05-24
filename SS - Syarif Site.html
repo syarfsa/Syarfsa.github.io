@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)file:///C:/Python%20Django/mysite/templates/index.html -->
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>SS - Syarif Site</title>
+  
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Roboto", sans-serif;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+        padding: 15px;
+        width: auto;
+        height: 80px;
+        background-color: #222;
+        box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+    }
+    .brand {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.5em;
+        padding: 15px;
+        text-transform: capitalize;
+    }
+    .firstname {
+        color: white;
+        font-weight: 700;
+    }
+    .lastname {
+        color: crimson;
+        font-weight: 400;
+        padding-left: 4px;
+    }
+    .navigation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation>li {
+        list-style-type: none;
+        padding: 15px;
+    }
+    .navigation>li>a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    .navigation>li>a:hover{
+        color: crimson;
+        transition: all .3s ease-in-out;
+    }
+    .active {
+        background-color: crimson;
+        color: white;
+        padding: 15px;
+    }
+    .active:hover {
+        color: white !important;
+    }
+    .clear{
+      float: none;
+      clear: both;
+    }
+    .center{
+      width : 1000px;
+      margin : 0 auto;
+    }
+    a{
+        -webkit-transition: 0.3s;
+        -moz-transition: o.3s;
+        -ms-transition: 0.3s;
+        -o-transition: 0.3;
+        transition: 0,3s;
+    }
+
+    /* Style header */
+    #header{
+       padding-top: 20px;
+       padding-bottom: 20px;
+    }
+    #header #logo{
+        float: left;
+    }
+    #header #logo img{
+        width: 100px;
+        height: 100px;
+    }
+    #header .menu{
+        float: left;
+    }
+    #header .menu ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    #header .menu ul li{
+        display: inline-block;
+        font-size: 20px;
+    }
+    #header .menu ul li a{
+        display: inline-block;
+        padding: 20px 10px;
+        text-transform: uppercase;
+        color: #373737;
+        text-decoration: none;
+    }
+    #header .menu ul li a:hover{
+        color: #000000;
+    }
+    #berita{
+        padding: 20px 0 5px;
+    }
+    #berita .judul{
+        text-transform: uppercase;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    /* Style Icon */
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .icon{
+        position: ;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+    }
+    .tombol{
+        display: inline-block;
+        width: 90px;
+        height: 90px;
+        background: #f1f1f1;
+        margin: 10px;
+        border-radius: 30%;
+        box-sizing: 0 5px 15px -5px #00000070;
+        overflow: hidden;
+        position: relative;
+        color: #2980b9;
+    }
+    .tombol i{
+        transition: 0.2s linear;
+        font-size: 26px;
+        line-height: 90px;
+    }
+    .tombol:hover i{
+        transform: scale(1.3);
+        color: #f1f1f1;
+    }
+    .tombol::before{
+        content: "";
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        left: -110%;
+        top: 90%;
+        transform: rotate(45deg);
+        background: #3498db;
+    }
+    .tombol:hover::before{
+        left: -10%;
+        top: -10%;
+        animation: aaa 0.7s 1;
+    }
+    @keyframes aaa{
+        0%{
+        left: -110%;
+        top: 90%;
+        }
+        50%{
+        left: 10%;
+        top: -30%;
+        }
+        100%{
+        left: -10%;
+        top: -10%;
+        }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HTML header -->
+    <div id="header">
+    <div class="" center"="">
+      <div id="logo">
+          <img src="./SS - Syarif Site_files/pktj.png">
+      </div>
+
+    <div class="fContainer">
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">syarif</div>
+                <div class="lastname">site</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="file:///C:/Python%20Django/mysite/templates/index.html">Home</a></li>
+                <li><a href="file:///C:/Python%20Django/mysite/templates/about.html">About</a></li>
+                <li><a href="file:///C:/Python%20Django/mysite/templates/gallery.html">Gallery</a></li>
+                <li><a href="file:///C:/Python%20Django/mysite/templates/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="menu">
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+<!--HTML Contrainer-->
+<div class="container">
+
+<!-- HTML Judul-->
+<div id="berita">
+
+    <div class="center">
+
+        <h1 class="judul">Kendaraan Masa Depan</h1>
+        <center>
+            <img src="./SS - Syarif Site_files/images">
+        </center>
+        <p align="justify">Dalam perkembangannya, manusia tentulah tidak akan pernah puas dalam pencapaian yang mereka peroleh saat sekarang. Contohnya saja mengenai teknologi kendaraan (mobil), mereka terus melakukan inovasi dengan tujuan yang bermacam-macam. Baik untuk menyelamatkan lingkungan, memajukan bisnis, hingga kenyamanan dalam berkendara.
+
+            Berikut ini diberikan beberapa contoh konsep kendaraan masa depan, diantaranya sebagai berikut:</p>
+    </div>
+</div>
+
+<!-- HTML isi -->
+<div id="hot">
+    <div class="center">
+    <div class="isi">
+          <div class="isiKMD">
+              <p>
+                </p><p align="justify">
+                <strong>1. Inceptor</strong>
+                    <br>Inceptor adalah sebuah studi konsep supercar hybrid futuristis yang dibuat oleh desainer muda berbakat berusia 19 tahun dari Azerbaijan, Samir Sadikhov. Meskipun konsep ini banyak terinspirasi dari sejumlah mobil karya desain kondang, tetap saja konsep ini terlihat segar dan keren.<br>
+                    <br>Bagian eksterior Inceptor 2020 ini memiliki gaya yang terinspirasi dari karya Pininfarina pada Ferrari P45, Bugatti Veyron dan Jaguar XJ220, sementara bagian interiornya berkiblat pada desain interior Lexus LFA.<br>
+                </p> 
+            <p></p>
+            <center> 
+              <img src="./SS - Syarif Site_files/inceptor-ut.jpg">
+            </center> 
+              <p align="justify">Lihatlah pelindung kabinnya yang serba melengkung bagaikan canopy kokpit pesawat tempur. Desain ini menghasilkan atap gaya panoramic, sekaligus menciptakan ruang pandang yang sangat leluasa. Bentuk ini juga ditujukan untuk memungkinkan penggunaan pintu model gunting yang sepertinya dicomot dari bentuk pintu pemenang balap Le Mans, GT40.</p>
+
+              <p align="justify">Rumah roda alias bagian seputar fender memiliki bentuk desain ‘paha kucing’ baik pada bagian depan maupun belakang plus sepasang lubang exhaust raksasa di bagian sisi belakang. Desain ini menjadikan Inceptor memiliki sikap seolah tengah mengendap-endap bersiap meyergap mangsa.</p>
+                
+              <p align="justify">Bagian interiornya yang unik menganut gaya tumpang tindih pada bagian dasbor lewat lekuk-lekuk dinamis. Fitur yang paling menonjol adalah ventilasi udara yang terpahat harfiah ke dalam dasbor. Keren…(Samir Sadikhov/OL-07)</p>
+              <p>
+                </p><p align="justify">
+                <strong>2. Honda 3R-C Concept</strong>
+                    <br>Honda 3R-C Concept, Konsep Mobil Masa Depan. Honda 3R-C adalah Revolusioner konsep kendaraan listrik masa depan di aktifkan oleh baterai lithium ion, Honda 3R-C kendaraan angkutan perkotaan untuk satu orang. Honda 3R-C diciptakan oleh Milan Honda studio yang akan dihadirkan di Geneva International Motor Show 2010.<br>
+              </p>
+            <center> 
+              <img src="./SS - Syarif Site_files/honda-3r-c-concept-1.jpg">
+              <img src="./SS - Syarif Site_files/konsep-honda-3r-c.jpg">
+            </center>
+              <p align="justify">Honda 3R-C memiliki kanopi yang mencakup kursi pengemudi ketika sedang diparkir dan tidak digunakan. Ketika Honda 3R-C bergerak, kanopi menjadi “perisai-angin” menyelubungi pilot yang duduk rendah di kendaraan, dengan perlindungan yang signifikan dari bodywork dan pintu. Keamanan sisi tinggi pada kursi cangkang yang memberikan keamanan lebih besar kepada pengemudi, mengurangi ancaman dari sisi dampak dan meningkatkan perlindungan cuaca. Di bagian depan pengemudi terdapat  area boot terkunci yang berguna untuk penyimpanan koper atau barang lain yang aman signifikan.</p>
+              <p align="justify">Desainer Honda 3R-C menciptakan penutup fleksibel yang mengelilingi tubuh bagian atas untuk mengurangi eksposur cuaca buruk dan meningkatkan kenyamanan. Belum ada keterangan lebih lanjut kapan Honda 3R-C ini akan dirilis, tergantung dari tanggapan para konsumen di Geneva International Motor Show 2010 bulan depan. Honda 3R-C concept, konsep mobil masa depan.</p>
+            <p align="justify">
+                <strong>3. Aston Martin DBGT, Audi RSQ dan Citroen C7</strong>
+                    <br>Teknologi otomotif memang ngga ada matinya, selalau saja ada inovasi baru seperti yang akan infoaja.com bagikan dibawah ini, setelah sebelumnya bebagi info tentang trend mobil masa depan, sekarang infoaja.com akan berbagi info tentang mobil konsep masa depan. dibawah ini ada 3 mobil konsep masa depan yaitu Aston Martin DBGT, Audi RSQ dan Citroen C7. bagaimana penampaka mobil-mobil konsep masa depan tersebut.<br>
+            </p>
+            <center> 
+              <img src="./SS - Syarif Site_files/qvwlc.jpg">
+            </center> 
+            <p align="justify">Berbahan bakar hidrogen yang berasal dari proses elektrolisis.Mobil ini merupakan sebuah konsep mobil futuristik dan terlihat ramping.Aston Martin DBGT 2025 memiliki kurva menakjubkan, dan body yang aerodinamis dan berjalan pada mesin 6 liter V12. Air akan dipecah menjadi hidrogen menghasilkan Oksigen dan hidrogen yang digunakan sebagai bahan bakar.Akselerasinya dapat mencapai 62mph dari 0 mph dalam 4,3 detik.</p>
+            <p align="justify">Untuk pertama kalinya, Audi mengembangkan sebuah mobil khusus untuk sebuah film Hollywood besar. insinyur Audi menciptakan mobil untuk ‘I, ROBOT’s’ dunia luar biasa 2035.Audi RSQ yang merupakan mobil sports coupe adalah interpretasi visioner Audi yang desainnya khas. Yang paling penting adalah bahwa meskipun karakter ekstrem mobil tetap harus diakui sebagai Audi. Oleh karena itu yang hobi nontonfilm akan melihat Audi baru front-end dengan satu kerangka khas kisi-kisi dalam film.</p>
+            <p align="justify">Perancang, insinyur, teknisi dan insinyur model butuh sepuluh minggu untuk membangun mobil konsep. Pada awal Juli Audi RSQ tiba di lokasi syuting di Vancouver.. Audi juga menyediakan kulit luarmodel mobil yang akan digunakan dalam adegan kecelakaan, serta interior terpisah mock-up untuk adegan tertembak.Itu 2035 di Chicago, dan mobil tidak lagi melakukan perjalanan di atas roda tapi di bola.</p>   
+            <p align="justify">Mobil ini dikonsep tahun 2007 Diproduksi kemungkinan tahun 2010 C7 Citroen Konsep ini diciptakan oleh Seojun, seorang mahasiswa desain Universitas Hongik di Seoul, Korea Selatan.C7 adalah sebuah mobil luxurius 4-pintu, 4-kursi sedan dengan coupe-seperti proporsi waktu dekat, 2010 tepatnya.Kesempatan C7 produksi dalam bentuk khusus ini adalah desain yang stylish yang mencoba untuk memprediksi masa depan desain Citroen. Desain eksterior dari konsep C7 Citroen anggun dan mengalir dengan bagian belakang yang lentik. Di depan kisi-kisi dari C7. fitur khas baru krom memanjang lencana yang telah menjadi standar di banyak Citroen lineup. Baris meningkatnya jendela samping memberikan konsep rasa gerak bahkan ketika stasioner, dan membantu untuk memberikan tempat duduk pengemudi dan penumpang depan yang lebih baik penglihatan sementara juga memberikan kursi penumpang belakang rasa privasi.</p>
+            <p align="justify">
+                <strong>4. Peugeot Metromorph</strong>
+                    <br>Satu lagi desain kendaraan masa depan dari pabrikan Peugeot, Perancis. Berangkat dari kebutuhan kendaraan ramah energi dan makin terbatasnya lahan parkir kota besar di masa depan maka diciptakanlah konsep mobil unik ini. Kalau Anda pernah lihat film Minority Report-nya Tom Cruise, mungkin Anda tidak akan asing lagi.<br>
+                    <br>Didesain oleh Roman Mistiuk, konsep Peugeot Metromorph mirip seperti karakter-karakter di film Minority Report-nya Tom Cruise. Konsep ini juga mengambil ide dari karakter Transformers. Kendaraan masa depan ini bisa dioperasikan dalam dua mode: pertama sebagai mobil listrik bertenaga baterai sekaligus sebagai balkon!Dua motor listrik in-wheels pada roda-roda depannya mengarahkan kendaraan ini. Dua pintu besar akan terbuka di bagian atasnya untuk keluar masuk.<br>
+            </p>
+            <center> 
+              <img src="./SS - Syarif Site_files/mobil-yg-menempel-di-dinding-32.jpg">
+            </center> 
+            <p align="justify">Mobil ini bisa merayap dan memanjat di dinding bangunan dan parkir tepat di depan jendela apartemen Anda. Hal ini merupakan solusi atas makin terbatasnya lahan parkir di masa depan seiring dengan makin crowded-nya kota besar.Kendaraan ini untuk dua orang dan joknya bisa berotasi pada suatu sumbu yang menjaga pengendaranya vertikal mengikuti orientasinya.</p>
+            <p align="justify">
+                <strong>5. BMW Megacity Vehicle</strong>
+                    <br>Arah konsep kendaraan masa depan memang sudah jelas. Beberapa syarat yang sekarang sudah mulai jadi kewajiban seperti ukuran yang tak terlalu besar, rendah emisi, dan hemat bahan bakar jelas harus ada. Dengan pemahaman yang sama pula BMW sebagai pemain lama dalam bidang otomotif mencoba merancang sebuah konsep mobil yang akan jadi alat transportasi masa depan. Mobil ini akan sepenuhnya menggunakan sumber energi listrik dan bakal mengusung sejumlah teknologi modern saat ini.<br>
+            </p>
+            <center> 
+              <img src="./SS - Syarif Site_files/bmwmegacity.jpg">
+            </center> 
+            <p align="justify">Proyek BMW Megacity Vehicle ini sebenarnya berawal dari Project i di akhir tahun 2007 lalu. Saat itu BMW mulai mencoba melirik pasar mobil hybrid dengan meluncurkan Mini E. Saat itu memang perbandingan antara penggunaan bahan bakar minyak dengan listrik memang belum berimbang dan karena itu BMW lantas meluncurkan 1-series Concept ActiveE yang bakal segera diluncurkan tahun 2011 nanti. Ini bukan proyek terakhir dari BMW karena untuk tahun 2013 nanti BMW sudah mempersiapkan MCV atau Megacity Vehicle ini.</p>
+            <p align="justify">Dari sketsa yang dipamerkan, terlihat bahwa desain bodi Megacity Vehicle ini memang sangat futuristik. Memang ada kemungkinan konsep ini akan berubah bentuk saat masuk masa produksi nanti namun paling tidak secara global kita sudah bisa memprediksi bentuk dasar Megacity Vehicle ini. Dari data spesifikasi, BMW menyebutkan bahwa MCV ini bakal menampung empat penumpang meski tidak ada kejelasan soal jumlah pintu yang akan terpasang pada mobil ini.</p>
+            <p align="justify">Salah satu komponen penting dalam mewujudkan mobil elektrik yang optimal jelas adalah bobot dari mobil ini sendiri. Bagaimana tidak, bobot baterainya saja bisa mencapai 250kg – 360kg. Karena itu, BMW menggandeng SGL Carbon untuk mendesain apa yang mereka sebut carbon fiber cell yang akan menjadi komponen pembentuk MCV ini. Dengan motor listrik yang mampu menghasilkan tenaga sebesar 135 daya kuda dan bobot mobil yang ringan maka diharapkan MCV ini bisa mencapai jarak tempuh ideal untuk disebut sebagai alat transportasi modern.</p>
+            
+            <p align="justify">Demikianlah beberapa contoh konsep kendaraan (mobil) masa depan yang akan digunakan oleh manusia. Semoga memberikan manfaat yang baik bagi kehidupan manusia.</p>
+        </div><!--Akhir isi-->
+      </div>
+      
+<!--Share this-->
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled">
+    <div class="sharedaddy sd-sharing-enabled">
+        <div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sahring">
+            <h3 class="sd-tittle">
+                Share This:
+            </h3>
+        </div>
+    </div>
+</div>
+ 
+    
+    <title>ANIMASI ICON SOSMED</title>
+    <link rel="stylesheet" type="text/css" href="file:///C:/Python%20Django/mysite/templates/style.css">
+    <link rel="stylesheet" type="text/css" href="./SS - Syarif Site_files/all.min.css">
+
+    <div class="icon">
+        <a class="tombol" href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+        <a class="tombol" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a class="tombol" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a class="tombol" href="https://whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</div></div></div></div></body></html>
